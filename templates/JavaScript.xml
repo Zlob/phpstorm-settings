@@ -1,0 +1,25 @@
+<templateSet group="JavaScript">
+  <template name="Backbone.Epoxy.View" value="define([&#10;        &quot;backbone&quot;,&#10;        &quot;text!../templates/$FILENAME$.html&quot;,&#10;        &quot;epoxy-full&quot;&#10;    ], function( Backbone, tpl ) {&#10;&#10;    &quot;use strict&quot;;&#10;&#10;    var view = Backbone.Epoxy.View.extend({&#10;        bindings: &quot;data-bind&quot;,&#10;        template: _.template(tpl),&#10;&#10;        events: {},&#10;&#10;        initialize: function (options) {&#10;            Backbone.Validation.bind(this);&#10;            this.bindingSources = app.dicts.get();&#10;        },&#10;&#10;        render: function () {&#10;            this.$el.empty().append(this.template());&#10;&#10;            this.applyBindings();&#10;            return this;&#10;        }&#10;&#10;    });&#10;&#10;    return view;&#10;});" toReformat="false" toShortenFQNames="true">
+    <variable name="FILENAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Backbone.View" value="define([&#10;    &quot;backbone&quot;,&#10;    &quot;text!../templates/$FILENAME$.html&quot;&#10;], function( Backbone, tpl ) {&#10;&#10;    &quot;use strict&quot;;&#10;&#10;    var view = Backbone.View.extend({&#10;        template : _.template( tpl ),&#10;&#10;        initialize : function( options ) {&#10;&#10;        },&#10;&#10;        render : function() {&#10;            var self = this;&#10;&#10;            this.$el.empty().append( this.template() );&#10;            &#10;            return this;&#10;        }&#10;&#10;    });&#10;&#10;    return view;&#10;});" toReformat="false" toShortenFQNames="true">
+    <variable name="FILENAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Backbone.Model" value="define([&quot;backbone&quot;], function( Backbone ) {&#10;&#10;    &quot;use strict&quot;;&#10;&#10;    var model = Backbone.Model.extend({&#10;&#10;        idAttribute : &quot;id&quot;,&#10;&#10;        defaults : {&#10;&#10;        },&#10;&#10;        urlRoot     : function () {&#10;            return &quot;&quot;;&#10;        },&#10;&#10;        initialize : function( options ) {&#10;&#10;        }&#10;&#10;    });&#10;&#10;    return model;&#10;});" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Backbone.Collection" value="define([&#10;    &quot;backbone&quot;,&#10;    &quot;../models/$FILENAME$&quot;&#10;], function( Backbone, Model ) {&#10;&#10;    &quot;use strict&quot;;&#10;&#10;    var collection = Backbone.Collection.extend({&#10;&#10;        model : Model,&#10;&#10;        url : function() {&#10;            return &quot;&quot;;&#10;        },&#10;&#10;        initialize : function( options ) {&#10;&#10;        }&#10;&#10;    });&#10;&#10;    return collection;&#10;});" toReformat="false" toShortenFQNames="true">
+    <variable name="FILENAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
