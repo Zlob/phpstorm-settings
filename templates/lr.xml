@@ -1,0 +1,10 @@
+<templateSet group="lr">
+  <template name="lr_model" value="&#10;namespace App\Models;&#10;&#10;use Illuminate\Database\Eloquent\Model;&#10;&#10;class $class_name$ extends Model&#10;{&#10;    protected $table = '$tab_name$';&#10;    protected $primaryKey = 'PK_$tab_name$';&#10;&#10;    public $timestamps = false;&#10;}&#10;" description="Laravel Model" toReformat="false" toShortenFQNames="true">
+    <variable name="class_name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="tab_name" expression="capitalizeAndUnderscore(class_name)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP String Literal" value="false" />
+    </context>
+  </template>
+</templateSet>
