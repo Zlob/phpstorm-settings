@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping ext="stub" type="PHP" />
       <mapping pattern="tmp" type="PLAIN_TEXT" />
+      <mapping pattern="ini" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
