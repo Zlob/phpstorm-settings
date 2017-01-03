@@ -6,6 +6,10 @@
           <option name="url" value="http://gitlab.etu.ru" />
           <option name="userName" value="vamakin" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://github.com" />
+          <option name="userName" value="zlob" />
+        </UrlAndUserName>
       </list>
     </option>
   </component>
