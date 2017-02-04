@@ -3,8 +3,8 @@
     <variable name="class_name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <variable name="tab_name" expression="capitalizeAndUnderscore(class_name)" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
       <option name="PHP String Literal" value="false" />
+      <option name="PHP" value="true" />
     </context>
   </template>
 </templateSet>
