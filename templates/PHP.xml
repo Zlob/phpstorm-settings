@@ -3,15 +3,15 @@
     <variable name="class_name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <variable name="tab_name" expression="capitalizeAndUnderscore(class_name)" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
       <option name="PHP String Literal" value="false" />
+      <option name="PHP" value="true" />
     </context>
   </template>
   <template name="lr_model" value="use Illuminate\Database\Eloquent\Model;&#10;&#10;class $class_name$ extends Model&#10;{&#10;    protected $fillable = [];&#10;&#10;    protected $hidden = [];&#10;&#10;    protected $casts = [];&#10;    &#10;    public $timestamps = false;&#10;}&#10;" description="Laravel Model" toReformat="false" toShortenFQNames="true">
     <variable name="class_name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
       <option name="PHP String Literal" value="false" />
+      <option name="PHP" value="true" />
     </context>
   </template>
 </templateSet>
