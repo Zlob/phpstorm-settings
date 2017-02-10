@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="migrations" description="run migrations" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="php" />
+      <option name="PARAMETERS" value="artisan migrate" />
+      <option name="WORKING_DIRECTORY" value="C:/Dropbox/IdeaProjects/lk" />
+    </exec>
+  </tool>
+</toolSet>
