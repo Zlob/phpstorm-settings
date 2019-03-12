@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping ext="stub" type="PHP" />
       <mapping pattern=".gitignor" type="PLAIN_TEXT" />
+      <mapping ext="gql" type="PLAIN_TEXT" />
       <mapping pattern="WoodmeterParams" type="Vue.js" />
       <mapping pattern="password-change" type="Vue.js" />
     </extensionMap>
